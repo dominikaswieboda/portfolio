@@ -1,0 +1,109 @@
+.contact {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  background-image: url("./../img/bg-contact.png");
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media (max-width: 768px) {
+    background-attachment: unset;
+  }
+  .container {
+    overflow: visible;
+  }
+  &__card {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    min-height: 400px;
+    margin: 100px auto 0;
+    border-radius: 7px;
+    background: $bg-main;
+    box-shadow: 0 0 20px rgba($black,.2);
+    overflow: hidden;
+    transition: all ease .5s;
+    @media (max-width: 768px) {
+      transform: none !important;
+      min-height: 400px;
+    }
+    @-moz-document url-prefix() {
+     transform: none !important;
+    }
+    &:hover {
+      box-shadow: 0 20px 40px rgba($black,.15);
+      transition: all ease .1s;
+    }
+  }
+  .card__content{
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    color: $text-dark;
+    @media (max-width: 768px) {
+      width: 90%;
+      transform: translate(-50%, -50%);
+    }
+    @media (max-width: 480px) {
+      text-align: center;
+    }
+    h3 {
+      text-align: center;
+      @media (max-width: 768px) {
+        font-size: 29px;
+        margin-bottom: 30px;
+      }
+      @media (max-width: 480px) {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      padding-bottom: 10px;
+      @media (max-width: 480px) {
+        padding-bottom: 20px;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+    i {
+      border: 1px solid $accent-color;
+      border-radius: 50%;
+      font-size: 24px;
+      height: 47px;
+      line-height: 47px;
+      margin-right: 12px;
+      text-align: center;
+      width: 47px;
+      color: $text-main;
+      @media (max-width: 480px) {
+        margin-right: 0;
+        margin-bottom: 8px;
+      }
+    }
+    a {
+      color: $text-lightest;
+      transition: $transition-base;
+      @media (max-width: 480px) {
+        display: block;
+      }
+      &:hover {
+        color: $text-dark;
+      }
+    }
+    span {
+      display: inline-block;
+      @media (max-width: 480px) {
+        display: block;
+      }
+    }
+  }
+}

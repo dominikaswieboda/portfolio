@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="./assets/favicon.ico">
+    <title>Dominika Świeboda | Portfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- build:css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--  Navigation menu -->
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__logo">
+            <a href="/portfolio">Dominika.</a>
+          </div>
+          <button class="header__hamburger">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </button>
+          <nav class="header__nav">
+            <a href="#start" class="header__nav__item">Start</a>
+            <a href="#about" class="header__nav__item">O mnie</a>
+            <a href="#technologies" class="header__nav__item">Technologie</a>
+            <a href="#portfolio" class="header__nav__item">Portfolio</a>
+            <a href="#contact" class="header__nav__item">Kontakt</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!--   Section: BANNER   -->
+      <section id="start" class="banner">
+        <div class="container">
+          <div class="banner__content">
+            <div class="banner__text">
+              <h5>Cześć, nazywam się</h5>
+              <h1>Dominika Świeboda</h1>
+              <p>Chciałabym zacząć moją przygodę jako Frontend Developer,
+                <a href="#portfolio">zobacz moje realizacje <i class="fas fa-arrow-down animated"></i></a>
+              </p>
+            </div>
+            <div class="banner__image">
+              <img class="person" src="img/person.png" alt="Dominika Świeboda">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--   Section: ABOUT   -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about__content">
+            <div class="about__content__heading">
+              <h2>O mnie</h2>
+            </div>
+            <div class="about__content__items">
+              <div class="about__item">
+                <div class="about__item__text">
+                  <p>Dlaczego chciałabym zostać Frontend Developerem? Od bardzo dawna interesowałam się programowaniem, ale tak naprawdę nie wiedziałam, czy warto iść w tym kierunku, czy to jest dla mnie? Po ukończeniu studiów postanowiłam zagłębić się w trendach projektowania stron www i tak też zaczęłam przygodę z programowaniem. Aktualnie staram się poszerzać wiedzę o nowe rozwiązania w budowaniu aplikacji frontendowych i w tym celu zajmuje się wykonywaniem komercyjnych projektów, mając kontakt z klientem oraz z Backend Developerem. </p>
+                </div>
+                <div class="about__item__image">
+                  <div class="polaroid">
+                    <img src="img/bieszczady.jpg" alt="Bieszczady">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn-primary">
+              <a target="_blank" download="Dominika_Swieboda_CV.pdf" href="./assets/Dominika_Swieboda_CV.pdf">Pobierz CV</a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--      Section: TECHNOLOGIES-->
+      <section id="technologies" class="technologies">
+        <div class="container">
+          <div class="technologies__content">
+            <div class="technologies__heading">
+              <h2>Technologie i narzędzia</h2>
+            </div>
+            <div class="technologies__text">
+              <p>Oprócz poniższych technologii w swojej pracy wykorzystuje jQuery, ale również chciałabym nauczyć się korzystać z React. Jednym z&nbsp;moich ulubionych programów do edycji kodu jest PhpStorm. Nie jest mi też obce korzystanie z Adobe Photoshop, Gulp/Webpack, Twig oraz systemu kontroli wersji jakim jest GIT.</p>
+            </div>
+            <div class="technologies__cards owl-carousel">
+                <div class="technologies__card">
+                    <span><i class="fab fa-html5"></i></span>
+                    <h5>HTML5</h5>
+                </div>
+                <div class="technologies__card">
+                    <span><i class="fab fa-css3-alt"></i></span>
+                    <h5>CSS3</h5>
+                </div>
+                <div class="technologies__card">
+                    <span><i class="fab fa-sass"></i></span>
+                    <h5>SASS</h5>
+                </div>
+                <div class="technologies__card">
+                  <span><i class="fab fa-js-square"></i></i></span>
+                  <h5>JavaScript</h5>
+                </div>
+                <div class="technologies__card">
+                      <span><i class="fab fa-wordpress-simple"></i></span>
+                       <h5>WordPress</h5>
+                </div>
+                <div class="technologies__card">
+                      <span><i class="fab fa-bootstrap"></i></span>
+                      <h5>Bootstrap</h5>
+                </div>
+                <div class="technologies__card">
+                  <span><i class="fab fa-vuejs"></i></span>
+                  <h5>vue.js</h5>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="dots">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+       <!--  Section: PORTFOLIO    -->
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <div class="portfolio__content">
+            <div class="portfolio__heading">
+              <h2>Moje realizacje</h2>
+            </div>
+            <div class="portfolio__text">
+              <p>Podczas wykonywania prac dużą uwagę przywiązuję do tego aby odzwierciedlić projekt graficzny co do piksela. W związku z tym zaczęłam korzystać z dodatku do przeglądrki, PerfectPixel. W ten sposób każdy z projektów, który robię staram się aby w każdym miejscu był idealnie ułożony według koncepcji graficznej.</p>
+            </div>
+            <div class="portfolio__filters">
+              <div class="portfolio__filters__category">
+                <ul>
+                  <li class="active" data-filter="*">Wszystkie</li>
+                  <li data-filter=".commercial">Komercyjne</li>
+                  <li data-filter=".training">Trening</li>
+                </ul>
+              </div>
+              <div class="portfolio__items">
+                <a href="https://banking.mobiletrends.pl/" target="_blank" class="portfolio__item all commercial">
+                  <div class="portfolio__item__front" style="background-image: url('./img/mta.jpg')"></div>
+                  <div class="portfolio__item__back">
+                    <div class="portfolio__item__inner">
+                      <h5>Mobile Trends</h5>
+                      <p>Komercyjny projekt z wykorzystaniem technologii takich jak HTML5, CSS3(SCSS), biblioteki jQuery.</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://dominikaswieboda.github.io/notify/" target="_blank" class="portfolio__item all training">
+                  <div class="portfolio__item__front" style="background-image: url('./img/notify.png')"></div>
+                  <div class="portfolio__item__back">
+                    <div class="portfolio__item__inner">
+                      <h5>Notify.</h5>
+                      <p>Strona wykonana na podstawie przykładowego projektu graficznego. Wykorzystanie HTML5, CSS3(SCSS), biblioteki jQuery. </p>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://dominikaswieboda.github.io/tinyone/" target="_blank" class="portfolio__item all training">
+                  <div class="portfolio__item__front" style="background-image: url('./img/tinyone.png')"></div>
+                  <div class="portfolio__item__back">
+                    <div class="portfolio__item__inner">
+                      <h5>Tinyone</h5>
+                      <p>Strona wykonana na podstawie przykładowego projektu graficznego. Wykorzystanie HTML5, CSS3(SCSS), biblioteki jQuery. Po kliknięciu w "About" przenosi do podstrony z innym ułożeniem graficznym. </p>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://estatevue-3820a.firebaseapp.com/" target="_blank" class="portfolio__item all training">
+                  <div class="portfolio__item__front" style="background-image: url('./img/estatevue.jpg')"></div>
+                  <div class="portfolio__item__back">
+                    <div class="portfolio__item__inner">
+                      <h5>Real Estate</h5>
+                      <p>Wymyślona aplikacja umożliwiająca dodawanie nieruchomości z wykorzystaniem vue.js.</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://dominikaswieboda.github.io/wirtualnebiuro/" target="_blank" class="portfolio__item all commercial">
+                  <div class="portfolio__item__front" style="background-image: url('./img/wbpanel.jpg')"></div>
+                  <div class="portfolio__item__back">
+                    <div class="portfolio__item__inner">
+                      <h5>ARCHEION Wirtualne Biuro</h5>
+                      <p>Komercyjny projekt z wykorzystaniem technologii takich jak HTML5, CSS3(SCSS), biblioteki jQuery oraz silnika Twig. Bezpośrednie przejścia do danych stron i elementów w opisie.</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://dominikaswieboda.github.io/addtask/" target="_blank" class="portfolio__item all training">
+                  <div class="portfolio__item__front" style="background-image: url('./img/addtask.png')"></div>
+                  <div class="portfolio__item__back">
+                    <div class="portfolio__item__inner">
+                      <h5>Add Task</h5>
+                      <p>Aplikacja zajmująca się dodaniem zadania dla danego pracownika. Każdy z pracowników posiada swoją tabele zadań, w której kwota w PLN jest przeliczona na Euro. Dane w tabeli można sortować. Wykorzystanie: HTML, CSS, jQuery </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--   Section: Contact   -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="contact__content">
+            <div class="contact__heading">
+              <h2>Kontakt</h2>
+            </div>
+            <div class="contact__card">
+              <div class="card__content">
+                <h3>Dominika Świeboda</h3>
+                <ul>
+                  <li>
+                    <i class="fas fa-phone"></i>
+                    <span>Telefon:<a href="tel:+48882657076"> 882-657-076</a></span>
+                  </li>
+                  <li>
+                    <i class="fas fa-envelope"></i>
+                    <span>Email:<a href="mailto:dominika_swieboda@outlook.com"> dominika_swieboda@outlook.com</a></span>
+                  </li>
+                  <li>
+                    <i class="far fa-file-alt"></i>
+                    <a href="./assets/Dominika_Swieboda_CV.pdf" target="_blank">Zobacz CV</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--  Footer  -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__text">
+            <p>Copyright &copy; 2019</p>
+          </div>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/dswieboda" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
+            <a href="https://www.instagram.com/d_swieboda/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+            <a href="https://github.com/dominikaswieboda" target="_blank"><i class="fab fa-github"></i>Github</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- build:js -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/slideNav.js"></script>
+    <script src="js/script.js"></script>
+    <!-- endbuild  -->
+  </body>
+</html>

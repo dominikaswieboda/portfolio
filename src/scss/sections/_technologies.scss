@@ -1,0 +1,66 @@
+.technologies {
+  position: relative;
+  overflow: hidden;
+  .container {
+    overflow: visible;
+  }
+  &__text {
+    text-align: center;
+    padding-top: 30px;
+    letter-spacing: 1px;
+  }
+  &__cards {
+    text-align: center;
+    padding-top: 40px;
+  }
+  &__card {
+    background-color: $bg-light;
+    width: 200px;
+    padding: 20px 10px 40px;
+    margin: 10px auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: $transition-base;
+    @media (max-width: 956px) {
+      width: 175px;
+    }
+    &:hover {
+      span {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      }
+    }
+    span {
+      position: relative;
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: $grey;
+      color: $white;
+      margin-bottom: 20px;
+      transition: $transition-base;
+      i {
+        font-size: 55px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+    h5 {
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        width: 10%;
+        height: 2px;
+        background-color: $light-grey;
+        left: 50%;
+        top: 130%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+
+
